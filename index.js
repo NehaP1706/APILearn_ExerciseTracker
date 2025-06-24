@@ -26,7 +26,7 @@ const exerciseSchema = new mongoose.Schema({
 });
 
 let User = mongoose.model('User', userSchema);
-let Exercise = moongose.model('Exercise', exerciseSchema);
+let Exercise = mongoose.model('Exercise', exerciseSchema);
 
 app.post('/api/users', function(req, res) {
   let username = req.body.username;
